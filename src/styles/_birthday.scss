@@ -1,0 +1,19 @@
+.birthday {
+    padding: 60px 0 120px;
+    background-image: linear-gradient(rgb(179, 0, 0), rgb(0, 154, 206));
+    color: white;
+
+    &__details {
+        &__title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        &__description {
+            text-align: justify;
+            font-size: 24px;
+        }
+    }
+}

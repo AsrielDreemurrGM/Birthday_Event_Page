@@ -1,6 +1,6 @@
 AOS.init();
 
-const birthdayDate = new Date("Sep 28, 2024 12:00:00");
+const birthdayDate = new Date("Sep 28, 2025 00:00:00");
 const timeStamp = birthdayDate.getTime();
 
 const calcDate = setInterval(function() {
@@ -17,10 +17,10 @@ const calcDate = setInterval(function() {
     const minutesUntilBirthday = Math.floor((timeUntilBirthday % hoursCalc) / (minutesCalc));
     const secondsUntilBirthday = Math.floor((timeUntilBirthday % minutesCalc) / 1000);
 
-    document.getElementById('timer').innerHTML = `<br>${hoursUntilBirthday} horas ${minutesUntilBirthday} minutos e ${secondsUntilBirthday} segundos`;
+    document.getElementById('timer').innerHTML = `<br>${hoursUntilBirthday} hours ${minutesUntilBirthday} minutes and ${secondsUntilBirthday} seconds`;
 
     if(timeUntilBirthday < 0) {
         clearInterval(calcDate);
-        document.getElementById('timer').innerHTML = `<br>Meu aniversário já passou.`;
+        document.getElementById('timer').innerHTML = `<br>My 20 years birthday already passed.`;
     }
 }, 1000)
